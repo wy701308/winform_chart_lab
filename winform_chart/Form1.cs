@@ -272,7 +272,7 @@ namespace winform_chart
             Series mySeries = new Series("myseries");
             mySeries.Points.DataBind(title_Table.AsEnumerable(),"","","");
             chart_value.Series.Add(mySeries);
-
+            
             /*
             DataTable mytable = new DataTable("mytable");
             mytable.Columns.Add("column1", typeof(int));
