@@ -1,0 +1,25 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 15
+VisualStudioVersion = 15.0.28307.1231
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "winform_chart", "winform_chart\winform_chart.csproj", "{CCF19930-88D2-4B50-9C42-11ED58670ACD}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{CCF19930-88D2-4B50-9C42-11ED58670ACD}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{CCF19930-88D2-4B50-9C42-11ED58670ACD}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{CCF19930-88D2-4B50-9C42-11ED58670ACD}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{CCF19930-88D2-4B50-9C42-11ED58670ACD}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {7ACCA39D-00BE-4024-9B38-E29A2E5E53DC}
+	EndGlobalSection
+EndGlobal
