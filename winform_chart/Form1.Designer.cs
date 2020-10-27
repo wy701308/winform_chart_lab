@@ -28,14 +28,14 @@
         /// </summary>
         private void InitializeComponent()
         {
-            System.Windows.Forms.DataVisualization.Charting.ChartArea chartArea1 = new System.Windows.Forms.DataVisualization.Charting.ChartArea();
-            System.Windows.Forms.DataVisualization.Charting.Legend legend1 = new System.Windows.Forms.DataVisualization.Charting.Legend();
-            System.Windows.Forms.DataVisualization.Charting.Series series1 = new System.Windows.Forms.DataVisualization.Charting.Series();
-            System.Windows.Forms.DataVisualization.Charting.DataPoint dataPoint1 = new System.Windows.Forms.DataVisualization.Charting.DataPoint(1D, 2D);
-            System.Windows.Forms.DataVisualization.Charting.DataPoint dataPoint2 = new System.Windows.Forms.DataVisualization.Charting.DataPoint(2D, 5D);
+            System.Windows.Forms.DataVisualization.Charting.ChartArea chartArea2 = new System.Windows.Forms.DataVisualization.Charting.ChartArea();
+            System.Windows.Forms.DataVisualization.Charting.Legend legend2 = new System.Windows.Forms.DataVisualization.Charting.Legend();
+            System.Windows.Forms.DataVisualization.Charting.Series series2 = new System.Windows.Forms.DataVisualization.Charting.Series();
+            System.Windows.Forms.DataVisualization.Charting.DataPoint dataPoint3 = new System.Windows.Forms.DataVisualization.Charting.DataPoint(1D, 2D);
+            System.Windows.Forms.DataVisualization.Charting.DataPoint dataPoint4 = new System.Windows.Forms.DataVisualization.Charting.DataPoint(2D, 5D);
             this.panel1 = new System.Windows.Forms.Panel();
             this.test = new System.Windows.Forms.Button();
-            this.comboBox6 = new System.Windows.Forms.ComboBox();
+            this.cbo_choose_file = new System.Windows.Forms.ComboBox();
             this.textBox6 = new System.Windows.Forms.TextBox();
             this.button12 = new System.Windows.Forms.Button();
             this.button11 = new System.Windows.Forms.Button();
@@ -44,40 +44,31 @@
             this.button8 = new System.Windows.Forms.Button();
             this.button7 = new System.Windows.Forms.Button();
             this.button6 = new System.Windows.Forms.Button();
-            this.comboBox5 = new System.Windows.Forms.ComboBox();
+            this.cbo_nameof_file = new System.Windows.Forms.ComboBox();
             this.textBox5 = new System.Windows.Forms.TextBox();
-            this.comboBox4 = new System.Windows.Forms.ComboBox();
+            this.cbo_choose_series = new System.Windows.Forms.ComboBox();
             this.textBox4 = new System.Windows.Forms.TextBox();
-            this.comboBox3 = new System.Windows.Forms.ComboBox();
+            this.cbo_numof_series = new System.Windows.Forms.ComboBox();
             this.textBox3 = new System.Windows.Forms.TextBox();
             this.textBox2 = new System.Windows.Forms.TextBox();
             this.textBox1 = new System.Windows.Forms.TextBox();
             this.comboBox2 = new System.Windows.Forms.ComboBox();
-            this.comboBox1 = new System.Windows.Forms.ComboBox();
+            this.cbo_numof_file = new System.Windows.Forms.ComboBox();
             this.Foundation_loads = new System.Windows.Forms.Button();
             this.Get_column_name = new System.Windows.Forms.Button();
             this.panel2 = new System.Windows.Forms.Panel();
             this.chart_value = new System.Windows.Forms.DataVisualization.Charting.Chart();
             this.my_dataSet = new System.Data.DataSet();
-            this.title_Table = new System.Data.DataTable();
-            this.dataColumn_04 = new System.Data.DataColumn();
-            this.binary_Table = new System.Data.DataTable();
-            this.dataColumn1 = new System.Data.DataColumn();
-            this.dataColumn2 = new System.Data.DataColumn();
-            this.dataColumn3 = new System.Data.DataColumn();
-            this.dataColumn4 = new System.Data.DataColumn();
             this.panel1.SuspendLayout();
             this.panel2.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.chart_value)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.my_dataSet)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.title_Table)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.binary_Table)).BeginInit();
             this.SuspendLayout();
             // 
             // panel1
             // 
             this.panel1.Controls.Add(this.test);
-            this.panel1.Controls.Add(this.comboBox6);
+            this.panel1.Controls.Add(this.cbo_choose_file);
             this.panel1.Controls.Add(this.textBox6);
             this.panel1.Controls.Add(this.button12);
             this.panel1.Controls.Add(this.button11);
@@ -86,16 +77,16 @@
             this.panel1.Controls.Add(this.button8);
             this.panel1.Controls.Add(this.button7);
             this.panel1.Controls.Add(this.button6);
-            this.panel1.Controls.Add(this.comboBox5);
+            this.panel1.Controls.Add(this.cbo_nameof_file);
             this.panel1.Controls.Add(this.textBox5);
-            this.panel1.Controls.Add(this.comboBox4);
+            this.panel1.Controls.Add(this.cbo_choose_series);
             this.panel1.Controls.Add(this.textBox4);
-            this.panel1.Controls.Add(this.comboBox3);
+            this.panel1.Controls.Add(this.cbo_numof_series);
             this.panel1.Controls.Add(this.textBox3);
             this.panel1.Controls.Add(this.textBox2);
             this.panel1.Controls.Add(this.textBox1);
             this.panel1.Controls.Add(this.comboBox2);
-            this.panel1.Controls.Add(this.comboBox1);
+            this.panel1.Controls.Add(this.cbo_numof_file);
             this.panel1.Controls.Add(this.Foundation_loads);
             this.panel1.Controls.Add(this.Get_column_name);
             this.panel1.Dock = System.Windows.Forms.DockStyle.Top;
@@ -116,17 +107,18 @@
             this.test.UseVisualStyleBackColor = true;
             this.test.Click += new System.EventHandler(this.test_Click);
             // 
-            // comboBox6
+            // cbo_choose_file
             // 
-            this.comboBox6.FormattingEnabled = true;
-            this.comboBox6.Location = new System.Drawing.Point(576, 18);
-            this.comboBox6.Name = "comboBox6";
-            this.comboBox6.Size = new System.Drawing.Size(121, 20);
-            this.comboBox6.TabIndex = 22;
+            this.cbo_choose_file.FormattingEnabled = true;
+            this.cbo_choose_file.Location = new System.Drawing.Point(520, 18);
+            this.cbo_choose_file.Name = "cbo_choose_file";
+            this.cbo_choose_file.Size = new System.Drawing.Size(75, 20);
+            this.cbo_choose_file.TabIndex = 22;
+            this.cbo_choose_file.SelectedIndexChanged += new System.EventHandler(this.cbo_nameof_file_SelectedIndexChanged);
             // 
             // textBox6
             // 
-            this.textBox6.Location = new System.Drawing.Point(500, 19);
+            this.textBox6.Location = new System.Drawing.Point(444, 19);
             this.textBox6.Name = "textBox6";
             this.textBox6.Size = new System.Drawing.Size(70, 21);
             this.textBox6.TabIndex = 21;
@@ -195,29 +187,30 @@
             this.button6.Text = "塔架载荷";
             this.button6.UseVisualStyleBackColor = true;
             // 
-            // comboBox5
+            // cbo_nameof_file
             // 
-            this.comboBox5.FormattingEnabled = true;
-            this.comboBox5.Location = new System.Drawing.Point(786, 18);
-            this.comboBox5.Name = "comboBox5";
-            this.comboBox5.Size = new System.Drawing.Size(121, 20);
-            this.comboBox5.TabIndex = 13;
+            this.cbo_nameof_file.FormattingEnabled = true;
+            this.cbo_nameof_file.Location = new System.Drawing.Point(711, 17);
+            this.cbo_nameof_file.Name = "cbo_nameof_file";
+            this.cbo_nameof_file.Size = new System.Drawing.Size(220, 20);
+            this.cbo_nameof_file.TabIndex = 13;
             // 
             // textBox5
             // 
-            this.textBox5.Location = new System.Drawing.Point(708, 19);
+            this.textBox5.Location = new System.Drawing.Point(611, 18);
             this.textBox5.Name = "textBox5";
-            this.textBox5.Size = new System.Drawing.Size(62, 21);
+            this.textBox5.Size = new System.Drawing.Size(80, 21);
             this.textBox5.TabIndex = 12;
-            this.textBox5.Text = "名称";
+            this.textBox5.Text = "数据文件表名";
             // 
-            // comboBox4
+            // cbo_choose_series
             // 
-            this.comboBox4.FormattingEnabled = true;
-            this.comboBox4.Location = new System.Drawing.Point(725, 87);
-            this.comboBox4.Name = "comboBox4";
-            this.comboBox4.Size = new System.Drawing.Size(121, 20);
-            this.comboBox4.TabIndex = 10;
+            this.cbo_choose_series.FormattingEnabled = true;
+            this.cbo_choose_series.Location = new System.Drawing.Point(725, 87);
+            this.cbo_choose_series.Name = "cbo_choose_series";
+            this.cbo_choose_series.Size = new System.Drawing.Size(121, 20);
+            this.cbo_choose_series.TabIndex = 10;
+            this.cbo_choose_series.SelectedIndexChanged += new System.EventHandler(this.cbo_choose_series_SelectedIndexChanged);
             // 
             // textBox4
             // 
@@ -227,13 +220,13 @@
             this.textBox4.TabIndex = 9;
             this.textBox4.Text = "参数单独显示";
             // 
-            // comboBox3
+            // cbo_numof_series
             // 
-            this.comboBox3.FormattingEnabled = true;
-            this.comboBox3.Location = new System.Drawing.Point(544, 86);
-            this.comboBox3.Name = "comboBox3";
-            this.comboBox3.Size = new System.Drawing.Size(71, 20);
-            this.comboBox3.TabIndex = 8;
+            this.cbo_numof_series.FormattingEnabled = true;
+            this.cbo_numof_series.Location = new System.Drawing.Point(544, 86);
+            this.cbo_numof_series.Name = "cbo_numof_series";
+            this.cbo_numof_series.Size = new System.Drawing.Size(71, 20);
+            this.cbo_numof_series.TabIndex = 8;
             // 
             // textBox3
             // 
@@ -245,7 +238,7 @@
             // 
             // textBox2
             // 
-            this.textBox2.Location = new System.Drawing.Point(319, 19);
+            this.textBox2.Location = new System.Drawing.Point(286, 17);
             this.textBox2.Name = "textBox2";
             this.textBox2.Size = new System.Drawing.Size(58, 21);
             this.textBox2.TabIndex = 6;
@@ -262,18 +255,18 @@
             // comboBox2
             // 
             this.comboBox2.FormattingEnabled = true;
-            this.comboBox2.Location = new System.Drawing.Point(383, 19);
+            this.comboBox2.Location = new System.Drawing.Point(350, 18);
             this.comboBox2.Name = "comboBox2";
-            this.comboBox2.Size = new System.Drawing.Size(65, 20);
+            this.comboBox2.Size = new System.Drawing.Size(88, 20);
             this.comboBox2.TabIndex = 3;
             // 
-            // comboBox1
+            // cbo_numof_file
             // 
-            this.comboBox1.FormattingEnabled = true;
-            this.comboBox1.Location = new System.Drawing.Point(238, 18);
-            this.comboBox1.Name = "comboBox1";
-            this.comboBox1.Size = new System.Drawing.Size(75, 20);
-            this.comboBox1.TabIndex = 2;
+            this.cbo_numof_file.FormattingEnabled = true;
+            this.cbo_numof_file.Location = new System.Drawing.Point(238, 18);
+            this.cbo_numof_file.Name = "cbo_numof_file";
+            this.cbo_numof_file.Size = new System.Drawing.Size(42, 20);
+            this.cbo_numof_file.TabIndex = 2;
             // 
             // Foundation_loads
             // 
@@ -306,23 +299,23 @@
             // 
             // chart_value
             // 
-            chartArea1.Name = "ChartArea1";
-            this.chart_value.ChartAreas.Add(chartArea1);
+            chartArea2.Name = "ChartArea1";
+            this.chart_value.ChartAreas.Add(chartArea2);
             this.chart_value.DataSource = this.my_dataSet;
             this.chart_value.Dock = System.Windows.Forms.DockStyle.Fill;
-            legend1.Name = "Legend1";
-            this.chart_value.Legends.Add(legend1);
+            legend2.Name = "Legend1";
+            this.chart_value.Legends.Add(legend2);
             this.chart_value.Location = new System.Drawing.Point(0, 0);
             this.chart_value.Name = "chart_value";
-            series1.ChartArea = "ChartArea1";
-            series1.ChartType = System.Windows.Forms.DataVisualization.Charting.SeriesChartType.Line;
-            series1.LabelBorderWidth = 6;
-            series1.LabelForeColor = System.Drawing.Color.DarkRed;
-            series1.Legend = "Legend1";
-            series1.Name = "power";
-            series1.Points.Add(dataPoint1);
-            series1.Points.Add(dataPoint2);
-            this.chart_value.Series.Add(series1);
+            series2.ChartArea = "ChartArea1";
+            series2.ChartType = System.Windows.Forms.DataVisualization.Charting.SeriesChartType.Line;
+            series2.LabelBorderWidth = 6;
+            series2.LabelForeColor = System.Drawing.Color.DarkRed;
+            series2.Legend = "Legend1";
+            series2.Name = "power";
+            series2.Points.Add(dataPoint3);
+            series2.Points.Add(dataPoint4);
+            this.chart_value.Series.Add(series2);
             this.chart_value.Size = new System.Drawing.Size(943, 403);
             this.chart_value.TabIndex = 0;
             this.chart_value.Text = "chart1";
@@ -330,46 +323,6 @@
             // my_dataSet
             // 
             this.my_dataSet.DataSetName = "NewDataSet";
-            this.my_dataSet.Tables.AddRange(new System.Data.DataTable[] {
-            this.title_Table,
-            this.binary_Table});
-            // 
-            // title_Table
-            // 
-            this.title_Table.Columns.AddRange(new System.Data.DataColumn[] {
-            this.dataColumn_04,
-            this.dataColumn3,
-            this.dataColumn4});
-            this.title_Table.MinimumCapacity = 20;
-            this.title_Table.TableName = "title_Table";
-            // 
-            // dataColumn_04
-            // 
-            this.dataColumn_04.ColumnName = "file_%04";
-            // 
-            // binary_Table
-            // 
-            this.binary_Table.Columns.AddRange(new System.Data.DataColumn[] {
-            this.dataColumn1,
-            this.dataColumn2});
-            this.binary_Table.MinimumCapacity = 20;
-            this.binary_Table.TableName = "binary_Table";
-            // 
-            // dataColumn1
-            // 
-            this.dataColumn1.ColumnName = "Column1";
-            // 
-            // dataColumn2
-            // 
-            this.dataColumn2.ColumnName = "Column2";
-            // 
-            // dataColumn3
-            // 
-            this.dataColumn3.ColumnName = "Column1";
-            // 
-            // dataColumn4
-            // 
-            this.dataColumn4.ColumnName = "Column2";
             // 
             // Form1
             // 
@@ -385,8 +338,6 @@
             this.panel2.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.chart_value)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.my_dataSet)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.title_Table)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.binary_Table)).EndInit();
             this.ResumeLayout(false);
 
         }
@@ -397,20 +348,18 @@
         private System.Windows.Forms.Panel panel2;
         private System.Windows.Forms.DataVisualization.Charting.Chart chart_value;
         private System.Data.DataSet my_dataSet;
-        public System.Data.DataTable title_Table;
-        private System.Data.DataColumn dataColumn_04;
-        private System.Windows.Forms.ComboBox comboBox3;
+        private System.Windows.Forms.ComboBox cbo_numof_series;
         private System.Windows.Forms.TextBox textBox3;
         private System.Windows.Forms.TextBox textBox2;
         private System.Windows.Forms.TextBox textBox1;
         private System.Windows.Forms.ComboBox comboBox2;
-        private System.Windows.Forms.ComboBox comboBox1;
+        private System.Windows.Forms.ComboBox cbo_numof_file;
         private System.Windows.Forms.Button Foundation_loads;
         private System.Windows.Forms.Button Get_column_name;
-        private System.Windows.Forms.ComboBox comboBox4;
+        private System.Windows.Forms.ComboBox cbo_choose_series;
         private System.Windows.Forms.TextBox textBox4;
         private System.Windows.Forms.TextBox textBox5;
-        private System.Windows.Forms.ComboBox comboBox6;
+        private System.Windows.Forms.ComboBox cbo_choose_file;
         private System.Windows.Forms.TextBox textBox6;
         private System.Windows.Forms.Button button12;
         private System.Windows.Forms.Button button11;
@@ -419,13 +368,8 @@
         private System.Windows.Forms.Button button8;
         private System.Windows.Forms.Button button7;
         private System.Windows.Forms.Button button6;
-        private System.Windows.Forms.ComboBox comboBox5;
-        private System.Data.DataTable binary_Table;
-        private System.Data.DataColumn dataColumn1;
+        private System.Windows.Forms.ComboBox cbo_nameof_file;
         private System.Windows.Forms.Button test;
-        private System.Data.DataColumn dataColumn2;
-        private System.Data.DataColumn dataColumn3;
-        private System.Data.DataColumn dataColumn4;
     }
 }
 
